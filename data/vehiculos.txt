@@ -1,50 +1,50 @@
-1;Bogota;5;AAA000;BMW-A1;Azul;Manual;1
-2;Valledupar;5;AAA001;Mercedes Benz-A1;Gris;Automático;1
-3;Cali;5;AAA002;Audi-A1;Negro;Manual;1
-4;Medellin;5;AAA003;Renault-A1;Rojo;Automático;1
-5;Barranquilla;5;AAA004;Ford-A1;Blanco;Manual;1
-6;Villavicencio;5;AAA005;BMW-A1A1;Azul;Automático;1
-7;Santa Marta;5;AAA006;Mercedes Benz-A1A1;Gris;Manual;1
-8;Riohacha;5;AAA007;Audi-A1A1;Negro;Automático;1
-9;Pereira;5;AAA008;Renault-A1A1;Rojo;Manual;1
-10;Cartagena;5;AAA009;Ford-A1A1;Blanco;Automático;1
-11;Bogota;5;AAA010;BMW-A1;Azul;Manual;1
-12;Valledupar;5;AAA011;Mercedes Benz-A1;Gris;Automático;1
-13;Cali;5;AAA012;Audi-A1;Negro;Manual;1
-14;Medellin;5;AAA013;Renault-A1;Rojo;Automático;1
-15;Barranquilla;5;AAA014;Ford-A1;Blanco;Manual;1
-16;Villavicencio;5;AAA015;BMW-A1A1;Azul;Automático;1
-17;Santa Marta;5;AAA016;Mercedes Benz-A1A1;Gris;Manual;1
-18;Riohacha;5;AAA017;Audi-A1A1;Negro;Automático;1
-19;Pereira;5;AAA018;Renault-A1A1;Rojo;Manual;1
-20;Cartagena;5;AAA019;Ford-A1A1;Blanco;Automático;1
-21;Bogota;5;AAA020;BMW-A1;Azul;Manual;2
-22;Valledupar;5;AAA021;Mercedes Benz-A1;Gris;Automático;2
-23;Cali;5;AAA022;Audi-A1;Negro;Manual;2
-24;Medellin;5;AAA023;Renault-A1;Rojo;Automático;2
-25;Barranquilla;5;AAA024;Ford-A1;Blanco;Manual;2
-26;Villavicencio;5;AAA025;BMW-A1A1;Azul;Automático;2
-27;Santa Marta;5;AAA026;Mercedes Benz-A1A1;Gris;Manual;2
-28;Riohacha;5;AAA027;Audi-A1A1;Negro;Automático;2
-29;Pereira;5;AAA028;Renault-A1A1;Rojo;Manual;2
-30;Cartagena;5;AAA029;Ford-A1A1;Blanco;Automático;2
-31;Bogota;5;AAA030;BMW-A1;Azul;Manual;3
-32;Valledupar;7;AAA031;Mercedes Benz-A1;Gris;Automático;3
-33;Cali;7;AAA032;Audi-A1;Negro;Manual;3
-34;Medellin;7;AAA033;Renault-A1;Rojo;Automático;3
-35;Barranquilla;7;AAA034;Ford-A1;Blanco;Manual;3
-36;Villavicencio;7;AAA035;BMW-A1A1;Azul;Automático;3
-37;Santa Marta;7;AAA036;Mercedes Benz-A1A1;Gris;Manual;3
-38;Riohacha;7;AAA037;Audi-A1A1;Negro;Automático;3
-39;Pereira;7;AAA038;Renault-A1A1;Rojo;Manual;3
-40;Cartagena;7;AAA039;Ford-A1A1;Blanco;Automático;3
-41;Bogota;7;AAA040;BMW-A1;Negro;Manual;4
-42;Valledupar;7;AAA041;Mercedes Benz-A1;Rojo;Automático;4
-43;Cali;7;AAA042;Audi-A1;Blanco;Manual;4
-44;Medellin;7;AAA043;Renault-A1;Negro;Automático;4
-45;Barranquilla;7;AAA044;Ford-A1;Rojo;Manual;4
-46;Villavicencio;7;AAA045;BMW-A1A1;Blanco;Automático;4
-47;Santa Marta;7;AAA046;Mercedes Benz-A1A1;Negro;Manual;4
-48;Riohacha;7;AAA047;Audi-A1A1;Rojo;Automático;4
-49;Pereira;7;AAA048;Renault-A1A1;Blanco;Manual;4
-50;Cartagena;7;AAA049;Ford-A1A1;Negro;Automático;4
+1;Bogota;5;AAA000;BMW-A1;Azul;Manual;1;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+2;Valledupar;5;AAA001;Mercedes Benz-A1;Gris;Automático;1;https://upload.wikimedia.org/wikipedia/commons/1/18/Bugatti_Chiron_1.jpg
+3;Cali;5;AAA002;Audi-A1;Negro;Manual;1;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+4;Medellin;5;AAA003;Renault-A1;Rojo;Automático;1;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+5;Barranquilla;5;AAA004;Ford-A1;Blanco;Manual;1;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+6;Villavicencio;5;AAA005;BMW-A1A1;Azul;Automático;1;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+7;Santa Marta;5;AAA006;Mercedes Benz-A1A1;Gris;Manual;1;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+8;Riohacha;5;AAA007;Audi-A1A1;Negro;Automático;1;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+9;Pereira;5;AAA008;Renault-A1A1;Rojo;Manual;1;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+10;Cartagena;5;AAA009;Ford-A1A1;Blanco;Automático;1;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+11;Bogota;5;AAA010;BMW-A1;Azul;Manual;1;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+12;Valledupar;5;AAA011;Mercedes Benz-A1;Gris;Automático;1;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+13;Cali;5;AAA012;Audi-A1;Negro;Manual;1;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+14;Medellin;5;AAA013;Renault-A1;Rojo;Automático;1;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+15;Barranquilla;5;AAA014;Ford-A1;Blanco;Manual;1;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+16;Villavicencio;5;AAA015;BMW-A1A1;Azul;Automático;1;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+17;Santa Marta;5;AAA016;Mercedes Benz-A1A1;Gris;Manual;1;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+18;Riohacha;5;AAA017;Audi-A1A1;Negro;Automático;1;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+19;Pereira;5;AAA018;Renault-A1A1;Rojo;Manual;1;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+20;Cartagena;5;AAA019;Ford-A1A1;Blanco;Automático;1;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+21;Bogota;5;AAA020;BMW-A1;Azul;Manual;2;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+22;Valledupar;5;AAA021;Mercedes Benz-A1;Gris;Automático;2;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+23;Cali;5;AAA022;Audi-A1;Negro;Manual;2;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.pngr
+24;Medellin;5;AAA023;Renault-A1;Rojo;Automático;2;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+25;Barranquilla;5;AAA024;Ford-A1;Blanco;Manual;2;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+26;Villavicencio;5;AAA025;BMW-A1A1;Azul;Automático;2;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+27;Santa Marta;5;AAA026;Mercedes Benz-A1A1;Gris;Manual;2;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+28;Riohacha;5;AAA027;Audi-A1A1;Negro;Automático;2;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+29;Pereira;5;AAA028;Renault-A1A1;Rojo;Manual;2;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+30;Cartagena;5;AAA029;Ford-A1A1;Blanco;Automático;2;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+31;Bogota;5;AAA030;BMW-A1;Azul;Manual;3;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+32;Valledupar;7;AAA031;Mercedes Benz-A1;Gris;Automático;3;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+33;Cali;7;AAA032;Audi-A1;Negro;Manual;3;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+34;Medellin;7;AAA033;Renault-A1;Rojo;Automático;3;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+35;Barranquilla;7;AAA034;Ford-A1;Blanco;Manual;3;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+36;Villavicencio;7;AAA035;BMW-A1A1;Azul;Automático;3;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+37;Santa Marta;7;AAA036;Mercedes Benz-A1A1;Gris;Manual;3;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+38;Riohacha;7;AAA037;Audi-A1A1;Negro;Automático;3;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+39;Pereira;7;AAA038;Renault-A1A1;Rojo;Manual;3;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+40;Cartagena;7;AAA039;Ford-A1A1;Blanco;Automático;3;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+41;Bogota;7;AAA040;BMW-A1;Negro;Manual;4;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+42;Valledupar;7;AAA041;Mercedes Benz-A1;Rojo;Automático;4;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+43;Cali;7;AAA042;Audi-A1;Blanco;Manual;4;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+44;Medellin;7;AAA043;Renault-A1;Negro;Automático;4;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+45;Barranquilla;7;AAA044;Ford-A1;Rojo;Manual;4;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+46;Villavicencio;7;AAA045;BMW-A1A1;Blanco;Automático;4;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+47;Santa Marta;7;AAA046;Mercedes Benz-A1A1;Negro;Manual;4;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+48;Riohacha;7;AAA047;Audi-A1A1;Rojo;Automático;4;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+49;Pereira;7;AAA048;Renault-A1A1;Blanco;Manual;4;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png
+50;Cartagena;7;AAA049;Ford-A1A1;Negro;Automático;4;https://w7.pngwing.com/pngs/484/215/png-transparent-bmw-x3-2015-bmw-x1-2014-bmw-x1-car-bmw-compact-car-car-vehicle.png

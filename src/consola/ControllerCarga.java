@@ -202,6 +202,7 @@ public class ControllerCarga {
 				String color = partes[5];
 				String tipoTransmision = partes[6];
 				String categoria = (partes[7]);
+				String rutaImagen = partes[8];
 				CategoriaVehiculo categoriaObjeto=null;
 				for (CategoriaVehiculo categoriaVehiculo : categoriaVehiculos) {
 					if(categoriaVehiculo.getNombreCategoria().equalsIgnoreCase(categoria)) {
@@ -209,7 +210,7 @@ public class ControllerCarga {
 					}
 				}
 				
-				Vehiculo Vehi = new Vehiculo(idVehiculo, false, null,sedeActual, capacidad, placa, modelo, color, tipoTransmision,categoriaObjeto,null,null,false,true);
+				Vehiculo Vehi = new Vehiculo(idVehiculo, false, null,sedeActual, capacidad, placa, modelo, color, tipoTransmision,categoriaObjeto,null,null,false,true,rutaImagen);
 				Vehiculos.add(Vehi);
 			} 
 		}

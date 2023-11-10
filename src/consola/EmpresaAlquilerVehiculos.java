@@ -39,62 +39,44 @@ public class EmpresaAlquilerVehiculos {
   public static Integer numeroReservaInteger = 0 ;
   
   
-  private void ejecutarPrograma() throws ParseException {
-	 //Pruebas
-
-	 //Pruebas
-	 System.out.println("Bienvenido a la empresa");
-	 String usuario=input("Usuario");
-	 String contrasenia=input("Contraseña");
+  public String ejecutarPrograma(String usuario, String contrasenia)  {
 	 String tipoUsuario =login(usuario, contrasenia);
-	 
 	 if(tipoUsuario.equals("")) {
-		 System.out.println("Usuario o contraseña incorrecta");
-		 while (tipoUsuario.equals("")) {
-			 System.out.println("Ingrese nuevamente su usuario y contraseña");
-			 usuario=input("Usuario");
-			 contrasenia=input("Contraseña");
-			 tipoUsuario =login(usuario, contrasenia);
-		 }
-		 
-		
+		 return "No encontrado";
 	 } else {
-		System.out.println("Entrando al sistema.....");
-		
-		if(tipoUsuario.equalsIgnoreCase("Cliente")){ 
-			Cliente clienteLogin = null;
-			for (Cliente cliente : listaClientes) {
-				
-				if(cliente.getUsuario().equals(usuario)&& cliente.getContraseña().equals(contrasenia)) {
-					clienteLogin = cliente;
-					break;}
-			}
-			programaCliente(clienteLogin);guardarycerra();
-			
-		}else if(tipoUsuario.equalsIgnoreCase("Empleado")) {
-			Empleado empleadoLogin = null;
-			for (Empleado empleado : listaEmpleados) {
-				if(empleado.getUsuario().equals(usuario)&& empleado.getContraseña().equals(contrasenia)) 
-					empleadoLogin = empleado;
-					break;
-			}programaEmpleado(empleadoLogin);guardarycerra();
-			
-		} else if (tipoUsuario.equalsIgnoreCase("Administrador General")) {
-			programaAdministradorGeneral(administradorGeneral);
-			guardarycerra();
-		}
-		
-		else if(tipoUsuario.equalsIgnoreCase("Administrador Local")) {
-			AdministradorLocal administradorLocalLogin = null;
-			for (AdministradorLocal AdmiL : listaAdministradorLocal) {
-				if(AdmiL.getUsuario().equals(usuario)&& AdmiL.getContraseña().equals(contrasenia)) 
-					administradorLocalLogin = AdmiL;
-					break;
-			}programaAdministradorLocal(administradorLocalLogin);guardarycerra();
-		}
+		 return tipoUsuario;
+//		if(tipoUsuario.equalsIgnoreCase("Cliente")){ 
+//			Cliente clienteLogin = null;
+//			for (Cliente cliente : listaClientes) {
+//				if(cliente.getUsuario().equals(usuario)&& cliente.getContraseña().equals(contrasenia)) {
+//					clienteLogin = cliente;
+//					break; }
+//			}
+//			programaCliente(clienteLogin);
+//			
+//		}else if(tipoUsuario.equalsIgnoreCase("Empleado")) {
+//			Empleado empleadoLogin = null;
+//			for (Empleado empleado : listaEmpleados) {
+//				if(empleado.getUsuario().equals(usuario)&& empleado.getContraseña().equals(contrasenia)) 
+//					empleadoLogin = empleado;
+//					break;
+//			}programaEmpleado(empleadoLogin);
+//			
+//		} else if (tipoUsuario.equalsIgnoreCase("Administrador General")) {
+//			programaAdministradorGeneral(administradorGeneral);
+//		}
+//		
+//		else if(tipoUsuario.equalsIgnoreCase("Administrador Local")) {
+//			AdministradorLocal administradorLocalLogin = null;
+//			for (AdministradorLocal AdmiL : listaAdministradorLocal) {
+//				if(AdmiL.getUsuario().equals(usuario)&& AdmiL.getContraseña().equals(contrasenia)) 
+//					administradorLocalLogin = AdmiL;
+//					break;
+//			}programaAdministradorLocal(administradorLocalLogin);
+//		}
 		
 	}
-	 
+	
  }
 
 private String login(String usuario,String contrasenia) {
@@ -256,11 +238,11 @@ private String login(String usuario,String contrasenia) {
 
  private void programaAdministradorGeneral (AdministradorGeneral administradorGeneral) {
 	menuAdministradorGeneral();
-	int option = Integer.parseInt(input("Ingrese la opcion que desea"));
+	 int option=4;
 	if(option==1) {
-		modificarVehiculoAdministradorGeneral();
+		System.out.println("");
 	}else if(option==2) {
-		darDeBajaVehiculoAdmin();
+		System.out.println();
 	}else if(option==3) {
 		guardarycerra();
 	}
@@ -270,9 +252,9 @@ private String login(String usuario,String contrasenia) {
  private void guardarycerra() {
 	 guardarReservas();
  }
- private void darDeBajaVehiculoAdmin(){
+public void darDeBajaVehiculoAdmin(int idVehiculo){
 	 
-	 int idVehiculo =Integer.parseInt(input("Id del vehiculo"));
+	 
 	 Vehiculo vehiculoDeBajaVehiculo=null;
 	 
 	 for (Vehiculo vehiculo : listaVehiculo) {
@@ -281,20 +263,15 @@ private String login(String usuario,String contrasenia) {
 		}
 	}
 	administradorGeneral.darDeBajaVehiculo(listaVehiculo, vehiculoDeBajaVehiculo, vehiculoDeBajaVehiculo.getSedeActual());
-	System.out.println("Vehiculo dado de baja");
+	
  }
  
  
- private void modificarVehiculoAdministradorGeneral() {
+ public void modificarVehiculoAdministradorGeneral(String nombreSedeString
+		 ,String modelo ,int capacidad,
+		 String placa, String color,String tipoTransmision,String categoriaVehiculo ,String rutaarchivo,int idVehiculo) {
+	
 	 
-	 	String nombreSedeString = input("Ingrese el nombre de la sede donde se registrara el coche");
-		String modelo =input("Ingrese el modelo del vehiculo");
-		int capacidad = Integer.parseInt( input("Ingrese la capacidad del vehiculo"));
-		String placa = input("Ingrese la placa del carro");
-		String color = input("Ingrese el color del vehiculo");
-		String tipoTransmision = input("Tipo de transmision");
-		String categoriaVehiculo = input("Categoria del vehiculo");
-		
 		Sede sede = controllerEmpresa.buscarSedePorNombre(nombreSedeString, listaSedes);
 		CategoriaVehiculo categoria =null;
 		
@@ -303,12 +280,12 @@ private String login(String usuario,String contrasenia) {
 				categoria = categoriaVehiculo2;
 			}
 		}
-		Vehiculo vehiculo = new Vehiculo(0, false, sede,nombreSedeString, capacidad, placa,
+		Vehiculo vehiculo = new Vehiculo(idVehiculo, false, sede,nombreSedeString, capacidad, placa,
 				                         modelo, color, tipoTransmision, categoria, null,
-				                         null, false, false);
+				                         null, false, false,rutaarchivo);
 		
 		administradorGeneral.registrarCompraVehiculo(vehiculo, sede,listaVehiculo);
-		System.out.println("Vehiculo registrado en el sistema");
+		
  }
 
  
@@ -518,16 +495,31 @@ public static void main(String[] args) throws ParseException {
 	 programa.cargaDatos(control);
 	 Persistencia persistencia = new Persistencia();
 	 programa.cargaPersistencia(persistencia, programa);
-	 programa.ejecutarPrograma();
+	 
+	 InterfazPrincipal ventana = new InterfazPrincipal(programa);
+	 ventana.setLocationRelativeTo( null );
+     ventana.setVisible( true );
+     
 	 
 }
  
+
+
  private Cliente buscarClienteSistema(String nombreCliente,ArrayList<Cliente> clientes) {
 	 Cliente clienteEncontrado;
 	 for (Cliente cliente2 : clientes) {
 		if(cliente2.getNombre().equalsIgnoreCase(nombreCliente)) {
 			clienteEncontrado = cliente2;
 			return clienteEncontrado;
+		}
+	} return null;
+ }
+ public AdministradorLocal buscarAdministradorLocalPorLogin(String usuario,String contrasenia) {
+	 AdministradorLocal administradorLocalEncontrado;
+	 for (AdministradorLocal administradorLocal2 : listaAdministradorLocal) {
+		if(administradorLocal2.getUsuario().equals(usuario)&& administradorLocal2.getContrasenia().equals(contrasenia)) {
+			administradorLocalEncontrado = administradorLocal2;
+			return administradorLocalEncontrado;
 		}
 	} return null;
  }
@@ -625,4 +617,15 @@ public String input(String mensaje)
 		}
 		return null;
 	}
+public Vehiculo buscarAutoPorId(int ID)
+{
+	for (Vehiculo vehiculo : listaVehiculo){
+		if(vehiculo.getIdVehiculo()==ID) {
+			return vehiculo;
+		}
+		
+	}
+	return null;
+	}
+
 }
