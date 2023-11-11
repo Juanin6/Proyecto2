@@ -32,6 +32,7 @@ public class InterfazPrincipal extends JFrame {
 	private InterfazRegistrarVehiculo interfazRegistrarVehiculo;
 	private PanelAdminLocal panelAdminLocal;
 	private PanelCliente panelCliente;
+
 	
 
 	public InterfazPrincipal(EmpresaAlquilerVehiculos empresaAlquilerVehiculos) {
@@ -149,8 +150,14 @@ public class InterfazPrincipal extends JFrame {
 		JframeAdminLocal.setSize(600,350);
 		
 		
-	}
+	}  
 	public ArrayList<String> listaUsuariosSistema(){
 		return empresaAlquilerVehiculos.crearListaUsuario();
+	}
+
+	public void PantallaReserva() {
+		interfazRegistrarVehiculo = new InterfazRegistrarVehiculo(this);
+		interfazRegistrarVehiculo.setVisible(true);
+		
 	}
 }

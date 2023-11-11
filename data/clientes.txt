@@ -8,3 +8,4 @@ GustavoC;Colombiano;3001504590;1978-03-05;Cliente7;DPOO7;Cliente;777;Colombia;20
 HernanC;Colombiano;3001504591;1987-12-02;Cliente8;DPOO8;Cliente;888;Colombia;2030-12-20
 IgnacioC;Colombiano;3001504590;1965-11-15;Cliente9;DPOO9;Cliente;999;Colombia;2030-12-21
 JavierC;Colombiano;3001504591;1991-08-03;Cliente10;DPOO10;Cliente;1111;Colombia;2030-12-22
+pruebaC;Colombiano;3001504591;1991-08-03;3;3;Cliente;1111;Colombia;2030-12-22
