@@ -1,7 +1,5 @@
 package consola;
 
-import java.awt.Color;
-import java.awt.Component;
 import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -18,11 +16,11 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JTextArea;
 
 import logica.AdministradorLocal;
+import logica.Empleado;
 
-public class PanelAdminLocal  extends JPanel implements ActionListener{
+public class PanelEmpleado extends JPanel implements ActionListener{
 	
 	private InterfazPrincipal interfazPrincipal;
 	private JButton botonRegistrarEmpleado;
@@ -30,7 +28,7 @@ public class PanelAdminLocal  extends JPanel implements ActionListener{
 	private JButton btonEliminar;
 	private Image imagen;	
 	
-	public PanelAdminLocal(InterfazPrincipal interfazPrincipal,AdministradorLocal administradorLocal) {
+	public PanelEmpleado(InterfazPrincipal interfazPrincipal,Empleado empleado ) {
 		
 		this.interfazPrincipal = interfazPrincipal;
 		cargarImagen();
@@ -63,7 +61,7 @@ public class PanelAdminLocal  extends JPanel implements ActionListener{
 		PanelInfo.add(labelNombre);
 
 		// JLabel con el nombre del administrador
-		JLabel labelNombreValor = new JLabel(administradorLocal.getNombre());
+		JLabel labelNombreValor = new JLabel(empleado.getNombre());
 		Font fontNombre = labelNombreValor.getFont();
 		labelNombreValor.setFont(new Font(fontNombre.getName(), Font.ITALIC, 25));
 		PanelInfo.add(labelNombreValor);
@@ -75,7 +73,7 @@ public class PanelAdminLocal  extends JPanel implements ActionListener{
 		PanelInfo.add(labelUsuario);
 
 		// JLabel con el nombre de usuario del administrador
-		JLabel labelUsuarioValor = new JLabel(administradorLocal.getUsuario());
+		JLabel labelUsuarioValor = new JLabel(empleado.getUsuario());
 		Font fontUsuario = labelUsuarioValor.getFont();
 		labelUsuarioValor.setFont(new Font(fontUsuario.getName(), Font.ITALIC, 25)); 
 		PanelInfo.add(labelUsuarioValor);
@@ -86,7 +84,7 @@ public class PanelAdminLocal  extends JPanel implements ActionListener{
 		PanelInfo.add(labelSede);
 
 		// JLabel con el nombre de la sede del administrador
-		JLabel labelSedeValor = new JLabel(administradorLocal.getSede());
+		JLabel labelSedeValor = new JLabel(empleado.getSede());
 		Font fontSede = labelSedeValor.getFont();
 		labelSedeValor.setFont(new Font(fontSede.getName(), Font.ITALIC, 25)); 
 		PanelInfo.add(labelSedeValor);
@@ -122,12 +120,15 @@ public class PanelAdminLocal  extends JPanel implements ActionListener{
 		}
 	}
 	
+
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
 		
 	}
 	
-
 	
+	
+	
+
 }
