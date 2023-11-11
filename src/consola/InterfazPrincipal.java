@@ -21,6 +21,7 @@ import javax.swing.JTextField;
 import javax.swing.border.Border;
 
 import logica.AdministradorLocal;
+import logica.Cliente;
 import logica.Vehiculo;
 
 
@@ -30,6 +31,7 @@ public class InterfazPrincipal extends JFrame {
 	private PanelAdminGeneral panelAdminGeneral;
 	private InterfazRegistrarVehiculo interfazRegistrarVehiculo;
 	private PanelAdminLocal panelAdminLocal;
+	private PanelCliente panelCliente;
 	
 
 	public InterfazPrincipal(EmpresaAlquilerVehiculos empresaAlquilerVehiculos) {
@@ -129,6 +131,20 @@ public class InterfazPrincipal extends JFrame {
 		
 		JframeAdminLocal.setVisible(true);
 		JframeAdminLocal.add(panelAdminLocal);
+		JframeAdminLocal.setResizable(false);
+		JframeAdminLocal.setSize(600,350);
+		
+		
+	}
+	
+	public void interfazCliente(String usuario , String contransenia) {
+		Cliente cliente = empresaAlquilerVehiculos.buscarClientePorLogin(usuario, contransenia);
+		panelCliente = new PanelCliente(this,cliente.getNombre(),cliente.getUsuario(),cliente.getFechaNac());
+		JFrame  JframeAdminLocal = new JFrame();
+		JframeAdminLocal.setLocationRelativeTo(null);
+		
+		JframeAdminLocal.setVisible(true);
+		JframeAdminLocal.add(panelCliente);
 		JframeAdminLocal.setResizable(false);
 		JframeAdminLocal.setSize(600,350);
 		

@@ -55,4 +55,9 @@ public Reserva crearReserva(Vehiculo vehiculo,Date fechaInicio,Date FechaFinal,d
   public  int getNumeroTarjeta () {
 	  return numeroTarjeta;
   }
+  
+  public String getFechaNac()
+  {
+	  return fechaNac;
+  }
 }

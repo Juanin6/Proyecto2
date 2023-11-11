@@ -10,6 +10,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
@@ -21,11 +24,11 @@ import javax.swing.JPanel;
 public class PanelCliente extends JPanel implements ActionListener{
 	private Image imagen ;
 	private InterfazPrincipal interfazPrincipal;
-	private JButton botonRegistrarEmpleado;
-	private JButton BtonRegistrarCliente;
+	private JButton botonReserva;
+	private JButton botonAlquilar;
 	private JButton btonEliminar;
 	
-	public PanelCliente(InterfazPrincipal interfazPrincipal) {
+	public PanelCliente(InterfazPrincipal interfazPrincipal, String nombre, String usuario, String fechaNac) {
 		this.interfazPrincipal = interfazPrincipal;
 		cargarImagen();
 		setLayout(new GridBagLayout());
@@ -59,10 +62,10 @@ public class PanelCliente extends JPanel implements ActionListener{
 		PanelInfo.add(labelNombre);
 		//NombreCliente
 		
-		//JLabel labelNombreValor = new JLabel(administradorLocal.getNombre());
-		//Font fontNombre = labelNombreValor.getFont();
-		//labelNombreValor.setFont(new Font(fontNombre.getName(), Font.ITALIC, 25));
-		//PanelInfo.add(labelNombreValor);
+		JLabel labelNombreValor = new JLabel(nombre);
+		Font fontNombre = labelNombreValor.getFont();
+		labelNombreValor.setFont(new Font(fontNombre.getName(), Font.ITALIC, 25));
+		PanelInfo.add(labelNombreValor);
 
 		// JLabel "Usuario"
 		JLabel labelUsuario = new JLabel("Usuario:");
@@ -71,27 +74,43 @@ public class PanelCliente extends JPanel implements ActionListener{
 		PanelInfo.add(labelUsuario);
 
 		// JLabel con el nombre de usuario del administrador
-		//JLabel labelUsuarioValor = new JLabel(administradorLocal.getUsuario());
-		//Font fontUsuario = labelUsuarioValor.getFont();
-		//labelUsuarioValor.setFont(new Font(fontUsuario.getName(), Font.ITALIC, 25)); 
-		//PanelInfo.add(labelUsuarioValor);
+		JLabel labelUsuarioValor = new JLabel(usuario);
+		Font fontUsuario = labelUsuarioValor.getFont();
+		labelUsuarioValor.setFont(new Font(fontUsuario.getName(), Font.ITALIC, 25)); 
+		PanelInfo.add(labelUsuarioValor);
 
-		// JLabel "Sede"
-		JLabel labelSede = new JLabel("Sede:");
+		// JLabel "FechaNac"
+		JLabel labelSede = new JLabel("FechaNac: ");
 		labelSede.setFont(new Font(labelSede.getFont().getName(),Font.PLAIN,25));
 		PanelInfo.add(labelSede);
 
+
+		
 		// JLabel con el nombre de la sede del administrador
-		//JLabel labelSedeValor = new JLabel(administradorLocal.getSede());
-		//Font fontSede = labelSedeValor.getFont();
-		//labelSedeValor.setFont(new Font(fontSede.getName(), Font.ITALIC, 25)); 
-		//PanelInfo.add(labelSedeValor);
+		JLabel labelFechaNacValor = new JLabel(fechaNac);
+		Font fontSede = labelFechaNacValor.getFont();
+		labelFechaNacValor.setFont(new Font(fontSede.getName(), Font.ITALIC, 25)); 
+		PanelInfo.add(labelFechaNacValor);
 		// JLabel "Nombre"
 		c.gridx = 1;
 		c.gridy = 0;
 		c.fill = GridBagConstraints.BOTH;
 		c.insets=new Insets(1, 10, 1, 1);
 		add(PanelInfo,c);
+		
+		//Botones Inferiores
+				JPanel panelInferior = new JPanel();
+				panelInferior.setLayout(new GridLayout(1,2,50,0));
+				botonReserva = new JButton("Reservar Vehículo");
+				botonAlquilar = new JButton("Alquilar Vehículo");
+				panelInferior.add(botonReserva);
+				panelInferior.add(botonAlquilar);
+				c = new GridBagConstraints();
+				c.gridx = 0;
+				c.gridy =6;
+				c.insets = new Insets(20,1, 1, 1);
+				c.gridwidth = 3;
+				add(panelInferior,c);
 	}
 	@Override
 	public void actionPerformed(ActionEvent e) {

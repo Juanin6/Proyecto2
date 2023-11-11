@@ -533,6 +533,16 @@ public static void main(String[] args) throws ParseException {
 	} return null;
  }
  
+ public Cliente buscarClientePorLogin(String usuario,String contrasenia) {
+	 Cliente clienteEncontrado;
+	 for (Cliente cliente2 : listaClientes) {
+		if(cliente2.getUsuario().equals(usuario)&& cliente2.getContraseña().equals(contrasenia)) {
+			clienteEncontrado = cliente2;
+			return clienteEncontrado;
+		}
+	} return null;
+ }
+ 
  private void cargaPersistencia(Persistencia persistencia, EmpresaAlquilerVehiculos self) throws ParseException {
 	ArrayList<Cliente> listaClientesAux;
 	listaClientesAux = persistencia.cargarClientesAgregadosNuevos("./data/persistencia/clientes.txt\\");
