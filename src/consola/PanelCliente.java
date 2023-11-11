@@ -58,10 +58,11 @@ public class PanelCliente extends JPanel implements ActionListener{
 		labelNombre.setFont(new Font(fontnombre.getName(), Font.PLAIN, 25));
 		PanelInfo.add(labelNombre);
 		//NombreCliente
-		JLabel labelNombreValor = new JLabel(administradorLocal.getNombre());
-		Font fontNombre = labelNombreValor.getFont();
-		labelNombreValor.setFont(new Font(fontNombre.getName(), Font.ITALIC, 25));
-		PanelInfo.add(labelNombreValor);
+		
+		//JLabel labelNombreValor = new JLabel(administradorLocal.getNombre());
+		//Font fontNombre = labelNombreValor.getFont();
+		//labelNombreValor.setFont(new Font(fontNombre.getName(), Font.ITALIC, 25));
+		//PanelInfo.add(labelNombreValor);
 
 		// JLabel "Usuario"
 		JLabel labelUsuario = new JLabel("Usuario:");
@@ -70,10 +71,10 @@ public class PanelCliente extends JPanel implements ActionListener{
 		PanelInfo.add(labelUsuario);
 
 		// JLabel con el nombre de usuario del administrador
-		JLabel labelUsuarioValor = new JLabel(administradorLocal.getUsuario());
-		Font fontUsuario = labelUsuarioValor.getFont();
-		labelUsuarioValor.setFont(new Font(fontUsuario.getName(), Font.ITALIC, 25)); 
-		PanelInfo.add(labelUsuarioValor);
+		//JLabel labelUsuarioValor = new JLabel(administradorLocal.getUsuario());
+		//Font fontUsuario = labelUsuarioValor.getFont();
+		//labelUsuarioValor.setFont(new Font(fontUsuario.getName(), Font.ITALIC, 25)); 
+		//PanelInfo.add(labelUsuarioValor);
 
 		// JLabel "Sede"
 		JLabel labelSede = new JLabel("Sede:");
@@ -81,10 +82,10 @@ public class PanelCliente extends JPanel implements ActionListener{
 		PanelInfo.add(labelSede);
 
 		// JLabel con el nombre de la sede del administrador
-		JLabel labelSedeValor = new JLabel(administradorLocal.getSede());
-		Font fontSede = labelSedeValor.getFont();
-		labelSedeValor.setFont(new Font(fontSede.getName(), Font.ITALIC, 25)); 
-		PanelInfo.add(labelSedeValor);
+		//JLabel labelSedeValor = new JLabel(administradorLocal.getSede());
+		//Font fontSede = labelSedeValor.getFont();
+		//labelSedeValor.setFont(new Font(fontSede.getName(), Font.ITALIC, 25)); 
+		//PanelInfo.add(labelSedeValor);
 		// JLabel "Nombre"
 		c.gridx = 1;
 		c.gridy = 0;

@@ -59,7 +59,7 @@ public class PanelAdminLocal  extends JPanel implements ActionListener{
 		
 		JPanel PanelInfo = new JPanel();
 		PanelInfo.setLayout(new GridLayout(3,2));
-		JLabel labelNombre = new JLabel("Nombre");
+		JLabel labelNombre = new JLabel("Nombre:");
 		Font fontnombre = labelNombre.getFont();
 		labelNombre.setFont(new Font(fontnombre.getName(), Font.PLAIN, 25));
 		PanelInfo.add(labelNombre);
