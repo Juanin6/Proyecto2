@@ -20,6 +20,7 @@ import javax.swing.JPanel;
 import logica.AdministradorLocal;
 import logica.Empleado;
 
+
 public class PanelEmpleado extends JPanel implements ActionListener{
 	
 	private InterfazPrincipal interfazPrincipal;
