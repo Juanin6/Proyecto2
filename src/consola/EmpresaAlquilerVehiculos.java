@@ -417,6 +417,15 @@ public void darDeBajaVehiculoAdmin(int idVehiculo){
 			guardarycerra();
 		}
 	}
+ public ArrayList<String> crearListaUsuario() {
+	 ArrayList<String> listaUsuarios = new ArrayList<String>();
+	 for (UsuarioGenerico usuarioGenerico : listaUsuarioGenericos) {
+		
+		listaUsuarios.add(usuarioGenerico.getUsuario());
+		
+	}
+	 return listaUsuarios;
+ }
  
  
  private void eliminarEmpleado() {
@@ -520,6 +529,16 @@ public static void main(String[] args) throws ParseException {
 		if(administradorLocal2.getUsuario().equals(usuario)&& administradorLocal2.getContrasenia().equals(contrasenia)) {
 			administradorLocalEncontrado = administradorLocal2;
 			return administradorLocalEncontrado;
+		}
+	} return null;
+ }
+ 
+ public Cliente buscarClientePorLogin(String usuario,String contrasenia) {
+	 Cliente clienteEncontrado;
+	 for (Cliente cliente2 : listaClientes) {
+		if(cliente2.getUsuario().equals(usuario)&& cliente2.getContraseña().equals(contrasenia)) {
+			clienteEncontrado = cliente2;
+			return clienteEncontrado;
 		}
 	} return null;
  }
