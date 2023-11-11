@@ -1,7 +1,5 @@
 package consola;
 
-import java.awt.Color;
-import java.awt.Component;
 import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -16,26 +14,22 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
-import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JTextArea;
 
 import logica.AdministradorLocal;
+import logica.Empleado;
 
-public class PanelAdminLocal  extends JPanel implements ActionListener{
+
+public class PanelEmpleado extends JPanel implements ActionListener{
 	
 	private InterfazPrincipal interfazPrincipal;
 	private JButton botonRegistrarEmpleado;
 	private JButton BtonRegistrarCliente;
 	private JButton btonEliminar;
-
 	private Image imagen;	
-
-	private JComboBox<String> usuariosBox ;
-
 	
-	public PanelAdminLocal(InterfazPrincipal interfazPrincipal,AdministradorLocal administradorLocal) {
+	public PanelEmpleado(InterfazPrincipal interfazPrincipal,Empleado empleado ) {
 		
 		this.interfazPrincipal = interfazPrincipal;
 		cargarImagen();
@@ -62,13 +56,13 @@ public class PanelAdminLocal  extends JPanel implements ActionListener{
 		
 		JPanel PanelInfo = new JPanel();
 		PanelInfo.setLayout(new GridLayout(3,2));
-		JLabel labelNombre = new JLabel("Nombre:");
+		JLabel labelNombre = new JLabel("Nombre");
 		Font fontnombre = labelNombre.getFont();
 		labelNombre.setFont(new Font(fontnombre.getName(), Font.PLAIN, 25));
 		PanelInfo.add(labelNombre);
 
 		// JLabel con el nombre del administrador
-		JLabel labelNombreValor = new JLabel(administradorLocal.getNombre());
+		JLabel labelNombreValor = new JLabel(empleado.getNombre());
 		Font fontNombre = labelNombreValor.getFont();
 		labelNombreValor.setFont(new Font(fontNombre.getName(), Font.ITALIC, 25));
 		PanelInfo.add(labelNombreValor);
@@ -80,7 +74,7 @@ public class PanelAdminLocal  extends JPanel implements ActionListener{
 		PanelInfo.add(labelUsuario);
 
 		// JLabel con el nombre de usuario del administrador
-		JLabel labelUsuarioValor = new JLabel(administradorLocal.getUsuario());
+		JLabel labelUsuarioValor = new JLabel(empleado.getUsuario());
 		Font fontUsuario = labelUsuarioValor.getFont();
 		labelUsuarioValor.setFont(new Font(fontUsuario.getName(), Font.ITALIC, 25)); 
 		PanelInfo.add(labelUsuarioValor);
@@ -91,7 +85,7 @@ public class PanelAdminLocal  extends JPanel implements ActionListener{
 		PanelInfo.add(labelSede);
 
 		// JLabel con el nombre de la sede del administrador
-		JLabel labelSedeValor = new JLabel(administradorLocal.getSede());
+		JLabel labelSedeValor = new JLabel(empleado.getSede());
 		Font fontSede = labelSedeValor.getFont();
 		labelSedeValor.setFont(new Font(fontSede.getName(), Font.ITALIC, 25)); 
 		PanelInfo.add(labelSedeValor);
@@ -115,23 +109,7 @@ public class PanelAdminLocal  extends JPanel implements ActionListener{
 		c.insets = new Insets(20,1, 1, 1);
 		c.gridwidth = 3;
 		add(panelInferior,c);
-		//Panel eliminar Usuario
-		JPanel panelEliminarU = new JPanel();
-		panelEliminarU.setLayout(new GridLayout(1,2,10,0));
-		 String[] listaUsuarios = interfazPrincipal.listaUsuariosSistema().toArray(new String[0]);
-		usuariosBox = new JComboBox(listaUsuarios);
 		
-		btonEliminar = new JButton("Eliminar");
-		btonEliminar.setBackground(Color.red);
-		panelEliminarU.add(usuariosBox);
-		panelEliminarU.add(btonEliminar);
-		c = new GridBagConstraints();
-		c.gridx=0;
-		c.gridy=7;
-		c.insets= new Insets(10, 0, 0, 0);
-		c.fill = GridBagConstraints.HORIZONTAL;
-		c.gridwidth = 2;
-		add(panelEliminarU,c);
 	}
 	
 	private void cargarImagen() {
@@ -143,12 +121,15 @@ public class PanelAdminLocal  extends JPanel implements ActionListener{
 		}
 	}
 	
+
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
 		
 	}
 	
-
 	
+	
+	
+
 }
