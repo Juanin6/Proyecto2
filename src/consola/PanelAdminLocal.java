@@ -16,6 +16,7 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
@@ -28,6 +29,7 @@ public class PanelAdminLocal  extends JPanel implements ActionListener{
 	private JButton botonRegistrarEmpleado;
 	private JButton BtonRegistrarCliente;
 	private JButton btonEliminar;
+	private JComboBox<String> usuariosBox ;
 	
 	
 	public PanelAdminLocal(InterfazPrincipal interfazPrincipal,AdministradorLocal administradorLocal) {
@@ -110,7 +112,23 @@ public class PanelAdminLocal  extends JPanel implements ActionListener{
 		c.insets = new Insets(20,1, 1, 1);
 		c.gridwidth = 3;
 		add(panelInferior,c);
+		//Panel eliminar Usuario
+		JPanel panelEliminarU = new JPanel();
+		panelEliminarU.setLayout(new GridLayout(1,2,10,0));
+		 String[] listaUsuarios = interfazPrincipal.listaUsuariosSistema().toArray(new String[0]);
+		usuariosBox = new JComboBox(listaUsuarios);
 		
+		btonEliminar = new JButton("Eliminar");
+		btonEliminar.setBackground(Color.red);
+		panelEliminarU.add(usuariosBox);
+		panelEliminarU.add(btonEliminar);
+		c = new GridBagConstraints();
+		c.gridx=0;
+		c.gridy=7;
+		c.insets= new Insets(10, 0, 0, 0);
+		c.fill = GridBagConstraints.HORIZONTAL;
+		c.gridwidth = 2;
+		add(panelEliminarU,c);
 	}
 	
 	private void cargarImagen() {

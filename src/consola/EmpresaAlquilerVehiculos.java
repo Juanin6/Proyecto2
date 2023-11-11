@@ -417,6 +417,15 @@ public void darDeBajaVehiculoAdmin(int idVehiculo){
 			guardarycerra();
 		}
 	}
+ public ArrayList<String> crearListaUsuario() {
+	 ArrayList<String> listaUsuarios = new ArrayList<String>();
+	 for (UsuarioGenerico usuarioGenerico : listaUsuarioGenericos) {
+		
+		listaUsuarios.add(usuarioGenerico.getUsuario());
+		
+	}
+	 return listaUsuarios;
+ }
  
  
  private void eliminarEmpleado() {

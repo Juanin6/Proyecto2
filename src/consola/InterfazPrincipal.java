@@ -125,13 +125,16 @@ public class InterfazPrincipal extends JFrame {
 		AdministradorLocal administradorLocal = empresaAlquilerVehiculos.buscarAdministradorLocalPorLogin(usuario, contransenia);
 		panelAdminLocal = new PanelAdminLocal(this,administradorLocal);
 		JFrame  JframeAdminLocal = new JFrame();
-		JframeAdminLocal.setLocationRelativeTo(this);
+		JframeAdminLocal.setLocationRelativeTo(null);
 		
 		JframeAdminLocal.setVisible(true);
 		JframeAdminLocal.add(panelAdminLocal);
-		JframeAdminLocal.pack();
+		JframeAdminLocal.setResizable(false);
+		JframeAdminLocal.setSize(600,350);
 		
 		
 	}
-	
+	public ArrayList<String> listaUsuariosSistema(){
+		return empresaAlquilerVehiculos.crearListaUsuario();
+	}
 }
